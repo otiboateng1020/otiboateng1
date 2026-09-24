@@ -1,0 +1,1 @@
+UPDATE public.profiles SET username = 'bwmxmd', updated_at = now() WHERE id = 'a94b67a1-37e8-4af2-ad85-6ce65f365146';

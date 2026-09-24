@@ -1,0 +1,1 @@
+ALTER TABLE public.orders ADD COLUMN IF NOT EXISTS batch_id UUID; CREATE INDEX IF NOT EXISTS orders_batch_id_idx ON public.orders(batch_id);

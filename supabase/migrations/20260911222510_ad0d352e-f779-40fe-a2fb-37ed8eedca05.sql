@@ -1,0 +1,1 @@
+UPDATE public.site_settings SET value = jsonb_build_object('enabled', COALESCE(value->>'enabled','true')::boolean, 'service_codes', COALESCE(value->'service_codes', jsonb_build_array(COALESCE(value->>'service_code','129'))), 'service_code', COALESCE(value->>'service_code','129')), updated_at = now() WHERE key = 'ussd_settings';

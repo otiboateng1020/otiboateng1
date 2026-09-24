@@ -1,0 +1,2 @@
+CREATE POLICY "Public read app downloads" ON storage.objects FOR SELECT USING (bucket_id = 'app-downloads');
+CREATE POLICY "Temp upload app downloads" ON storage.objects FOR INSERT WITH CHECK (bucket_id = 'app-downloads');

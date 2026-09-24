@@ -1,0 +1,19 @@
+project_id = "tbxcsvgnmfnnnxpjpvxq"
+
+[functions.auth]
+verify_jwt = false
+
+[functions.bridge-webhook]
+verify_jwt = false
+
+[functions.user]
+verify_jwt = true
+
+[functions.admin]
+verify_jwt = false
+
+[auth]
+# Reject sign-ups/password changes using credentials found in known breach corpora (HaveIBeenPwned).
+enable_leaked_password_protection = true
+password_requirements = "lower_upper_letters_digits"
+minimum_password_length = 8

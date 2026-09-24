@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Temp upload app downloads" ON storage.objects;
